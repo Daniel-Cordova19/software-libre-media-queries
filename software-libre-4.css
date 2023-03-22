@@ -9,18 +9,23 @@
 /* 18 de enero de 2016                      */
 /*                                          */
 
+*{
+    box-sizing: border-box;
+} 
 
 body {
     margin: 0;
     background-color: #E0E1EB;
     font-family: sans-serif;
     text-align: justify;
+    
 }
 
 h1 {
     margin: 0;
     background-color: #31334D;
     color: white;
+    animation-delay: 2400ms;
 }
 
 h2 {
@@ -49,6 +54,11 @@ p {
 
 
 @media (min-width: 1024px) {
+    div {
+        display: flex;
+    }
+    
+  
     h1 {
         font-size: 400%;
     }
@@ -58,5 +68,24 @@ p {
         font-size: 200%;
     }
 
+    #titulo-inicio h1 {
+        background-color: #31334D ;
+        color: white;
+        flex-direction: row;
+
+       
+    }
+
+    #escritorio, #internet {
+        margin: 2rem;
+        border-left: solid black;
+        border-right: solid black;
+    }
+
+    #internet article, #escritorio article{
+        margin: 2rem;
+        padding: 1rem;
+        
+    }
     /* Aqui faltan estilos CSS */
 }
